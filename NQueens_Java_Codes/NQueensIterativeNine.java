@@ -74,13 +74,6 @@ public class NQueensIterativeNine {
 
     public static boolean nQueen(int[][] board, int row)  { //method that uses the iterative format combined with backtracking to place the queens on the board
 
-        if (row == board.length) { //base case for recursive algorithm that is reached when all queens are placed
-
-            printSolvedArray(board);
-            return true;
-
-        }
-
         //the for loops below run iteratively and each one runs through its respective ith row (e.g. the for loop with int i2 corresponds to row of index 2)
         //these loops go through the rows and determine if a queen can be placed on an index in the row and if it is unable to it will back track by resetting the index of the placed queen to zero
         //the for loops are nested within eachother to act similairly to the recursive found in NQueensRecursive
